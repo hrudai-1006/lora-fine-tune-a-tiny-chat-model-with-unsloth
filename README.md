@@ -1,2 +1,36 @@
-# lora-fine-tune-a-tiny-chat-model-with-unsloth
+# LoRA Fine-Tune a Tiny Chat Model with Unsloth
+
 Build an end-to-end LoRA fine-tuning pipeline for a 4-bit Qwen2.5-0.5B chat model using Unsloth. You'll load the quantized base, attach LoRA adapters, format a tiny instruction dataset, run a featherweight SFT job, and generate a reply from the tuned model.
+
+## How to run
+
+```bash
+python scaffold.py
+```
+
+## Steps
+
+- [x] **1.** load_base_model_and_tokenizer
+- [ ] **2.** count_total_parameters
+- [ ] **3.** is_model_4bit_quantized
+- [ ] **4.** ensure_pad_token
+- [ ] **5.** get_lora_target_modules
+- [ ] **6.** attach_lora_adapters
+- [ ] **7.** count_trainable_parameters
+- [ ] **8.** trainable_fraction
+- [ ] **9.** build_instruction_examples
+- [ ] **10.** format_instruction_example
+- [ ] **11.** format_all_examples
+- [ ] **12.** build_text_dataset
+- [ ] **13.** tokenize_text
+- [ ] **14.** count_tokens
+- [ ] **15.** build_training_arguments
+- [ ] **16.** build_sft_trainer
+- [ ] **17.** run_sft_training
+- [ ] **18.** switch_to_inference_mode
+- [ ] **19.** build_chat_prompt
+- [ ] **20.** generate_reply
+
+---
+
+Built on Deep-ML.
