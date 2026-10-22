@@ -11,7 +11,7 @@ python scaffold.py
 ## Steps
 
 - [x] **1.** load_base_model_and_tokenizer
-- [ ] **2.** count_total_parameters
+- [x] **2.** count_total_parameters
 - [ ] **3.** is_model_4bit_quantized
 - [ ] **4.** ensure_pad_token
 - [ ] **5.** get_lora_target_modules
