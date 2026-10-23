@@ -16,7 +16,7 @@ python scaffold.py
 - [x] **4.** ensure_pad_token
 - [x] **5.** get_lora_target_modules
 - [x] **6.** attach_lora_adapters
-- [ ] **7.** count_trainable_parameters
+- [x] **7.** count_trainable_parameters
 - [ ] **8.** trainable_fraction
 - [ ] **9.** build_instruction_examples
 - [ ] **10.** format_instruction_example
