@@ -43,8 +43,11 @@ def ensure_pad_token(tokenizer):
         tokenizer.pad_token = tokenizer.eos_token
     return tokenizer
 
-# Step 5 - get_lora_target_modules (not yet solved)
-# TODO: implement
+# Step 5 - get_lora_target_modules
+def get_lora_target_modules():
+    """Return the attention projection module name suffixes for LoRA."""
+    # TODO: return the list of attention projection module names LoRA should adapt
+    return ['q_proj', 'k_proj', 'v_proj', 'o_proj']
 
 # Step 6 - attach_lora_adapters (not yet solved)
 # TODO: implement
