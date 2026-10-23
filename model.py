@@ -72,8 +72,12 @@ def count_trainable_parameters(model):
     # TODO: sum p.numel() over model.parameters() where requires_grad is True
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
-# Step 8 - trainable_fraction (not yet solved)
-# TODO: implement
+# Step 8 - trainable_fraction
+def trainable_fraction(trainable_count, total_count):
+    # TODO: return the fraction of parameters that are trainable.
+    if total_count <= 0:
+        raise ValueError("total_count must be greater than 0")
+    return trainable_count / total_count
 
 # Step 9 - build_instruction_examples (not yet solved)
 # TODO: implement
