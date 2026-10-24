@@ -29,7 +29,7 @@ python scaffold.py
 - [x] **17.** run_sft_training
 - [x] **18.** switch_to_inference_mode
 - [x] **19.** build_chat_prompt
-- [ ] **20.** generate_reply
+- [x] **20.** generate_reply
 
 ---
 
