@@ -25,7 +25,7 @@ python scaffold.py
 - [x] **13.** tokenize_text
 - [x] **14.** count_tokens
 - [x] **15.** build_training_arguments
-- [ ] **16.** build_sft_trainer
+- [x] **16.** build_sft_trainer
 - [ ] **17.** run_sft_training
 - [ ] **18.** switch_to_inference_mode
 - [ ] **19.** build_chat_prompt

@@ -158,8 +158,34 @@ def build_training_arguments(output_dir='./sft_out', max_steps=5, learning_rate=
         optim="adamw_8bit",
     )
 
-# Step 16 - build_sft_trainer (not yet solved)
-# TODO: implement
+# Step 16 - build_sft_trainer
+def build_sft_trainer(model, tokenizer, dataset, training_args, max_seq_length=256):
+    """Construct a trl SFTTrainer over dataset['text'] ready to .train()."""
+    # TODO: wire model, tokenizer, dataset, and training_args into an SFTTrainer
+    from trl import SFTTrainer, SFTConfig
+
+    sft_config = SFTConfig(
+        output_dir=training_args.output_dir,
+        max_steps=training_args.max_steps,
+        learning_rate=training_args.learning_rate,
+        per_device_train_batch_size=training_args.per_device_train_batch_size,
+        gradient_accumulation_steps=training_args.gradient_accumulation_steps,
+        logging_steps=training_args.logging_steps,
+        optim=training_args.optim,
+        bf16=training_args.bf16,
+        fp16=training_args.fp16,
+        max_length=max_seq_length,
+        packing=False,
+        dataset_text_field="text",
+        report_to="none",
+    )
+
+    return SFTTrainer(
+        model=model,
+        processing_class=tokenizer,
+        train_dataset=dataset,
+        args=sft_config,
+    )
 
 # Step 17 - run_sft_training (not yet solved)
 # TODO: implement
