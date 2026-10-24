@@ -131,8 +131,11 @@ def tokenize_text(tokenizer, text):
     # TODO: call the tokenizer on text and return its input_ids as a plain list
     return tokenizer(text, padding=False, truncation=False)["input_ids"]
 
-# Step 14 - count_tokens (not yet solved)
-# TODO: implement
+# Step 14 - count_tokens
+def count_tokens(input_ids):
+    """Return the number of tokens in a tokenized example."""
+    # TODO: return the length of the input_ids sequence
+    return int(len(input_ids))
 
 # Step 15 - build_training_arguments (not yet solved)
 # TODO: implement
