@@ -19,7 +19,7 @@ python scaffold.py
 - [x] **7.** count_trainable_parameters
 - [x] **8.** trainable_fraction
 - [x] **9.** build_instruction_examples
-- [ ] **10.** format_instruction_example
+- [x] **10.** format_instruction_example
 - [ ] **11.** format_all_examples
 - [ ] **12.** build_text_dataset
 - [ ] **13.** tokenize_text
