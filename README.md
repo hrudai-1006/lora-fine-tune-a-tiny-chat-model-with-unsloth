@@ -21,7 +21,7 @@ python scaffold.py
 - [x] **9.** build_instruction_examples
 - [x] **10.** format_instruction_example
 - [x] **11.** format_all_examples
-- [ ] **12.** build_text_dataset
+- [x] **12.** build_text_dataset
 - [ ] **13.** tokenize_text
 - [ ] **14.** count_tokens
 - [ ] **15.** build_training_arguments
