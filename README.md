@@ -20,7 +20,7 @@ python scaffold.py
 - [x] **8.** trainable_fraction
 - [x] **9.** build_instruction_examples
 - [x] **10.** format_instruction_example
-- [ ] **11.** format_all_examples
+- [x] **11.** format_all_examples
 - [ ] **12.** build_text_dataset
 - [ ] **13.** tokenize_text
 - [ ] **14.** count_tokens
