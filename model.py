@@ -79,8 +79,32 @@ def trainable_fraction(trainable_count, total_count):
         raise ValueError("total_count must be greater than 0")
     return trainable_count / total_count
 
-# Step 9 - build_instruction_examples (not yet solved)
-# TODO: implement
+# Step 9 - build_instruction_examples
+def build_instruction_examples():
+    """Return a small list of {'instruction', 'response'} dicts for SFT."""
+    # TODO: return a tiny hand-written list of instruction/response example dicts.
+    return [
+        {
+            "instruction": "Say hello in one short sentence.",
+            "response": "Hello! How can I help you today?"
+        },
+        {
+            "instruction": "What is Python?",
+            "response": "Python is a versatile programming language known for its readable syntax."
+        },
+        {
+            "instruction": "What is 5 + 7?",
+            "response": "5 + 7 = 12."
+        },
+        {
+            "instruction": "Explain artificial intelligence briefly.",
+            "response": "Artificial intelligence enables machines to perform tasks that typically require human intelligence."
+        },
+        {
+            "instruction": "Give one tip for learning programming.",
+            "response": "Practice coding regularly by solving small problems and building projects."
+        }
+    ]
 
 # Step 10 - format_instruction_example (not yet solved)
 # TODO: implement
